@@ -15,12 +15,12 @@ namespace WindowsFormsApp2
     public partial class Menu : Form
     {
 
-        public static Menu instance;
+        
         
         public Menu()
         {
             InitializeComponent();
-            instance = this;
+           
             
         }
 

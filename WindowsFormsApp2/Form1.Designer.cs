@@ -78,9 +78,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label2.Location = new System.Drawing.Point(227, 282);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 24);
+            this.label2.Size = new System.Drawing.Size(271, 24);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Угадуй по букві або ціле слово";
+            this.label2.Text = "Введіть букву або ціле слово";
             // 
             // panel1
             // 

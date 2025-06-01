@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Diagnostics.PerformanceData;
 using System.Drawing;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace WindowsFormsApp2
     {
 
 
-        public static Form1 instance;
+        
         public static string[] words = new string[1];
         public static Random rand = new Random();
         public static string word;
@@ -30,7 +31,7 @@ namespace WindowsFormsApp2
         public Form1()
         {
             InitializeComponent();
-            instance = this;
+            
             attempts = 7;
 
             
@@ -61,7 +62,7 @@ namespace WindowsFormsApp2
             if (textBox1.Text.Length > 1 && textBox1.Text.Length != word.Length) label2.Text = "Треба ввести одну букву або ціле слово ";
             else if (textBox1.Text.Length == word.Length) label2.Text = "Ти вже знаєш слово?";
             else if (textBox1.Text.Length == 1 && tried.Contains(char.Parse(textBox1.Text)) ) { label2.Text = "Ти вже пробував цю букву";}
-            else label2.Text = "Угадуй по букві або ціле слово";
+            else label2.Text = "Введіть букву або ціле слово";
             label2.Left = (this.ClientSize.Width - label2.Width) / 2;
             
 
